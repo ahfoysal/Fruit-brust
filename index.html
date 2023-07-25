@@ -49,6 +49,11 @@
       .poppins {
         font-family: "Poppins", sans-serif;
       }
+      .dropdown .dropdown-content {
+        position: absolute;
+        right: 0 !important;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -57,8 +62,9 @@
 
     <header>
       <div
-        class="hidden container mx-auto md:flex-row flex-row-reverse navbar md:bg-heroPrimary my-12 px-12 text-white rounded-full"
+        class="container mx-auto navbar md:bg-heroPrimary md:my-12 md:px-12 text-neutral-950 md:text-white rounded-full"
       >
+        <!-- Only for Desktop Nac -->
         <div class="navbar-start hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-lg font-medium">
             <li><a>All Fruits</a></li>
@@ -67,9 +73,13 @@
             <li><a>Home</a></li>
           </ul>
         </div>
-        <div class="navbar-center text-black">
+        <div class="navbar-center">
+          <!-- desktop and mobile logo container -->
+          <img src="images/logo.png" alt="" />
+          <p class="normal-case text-4xl font-bold px-4 py-8">Fruit Burst</p>
           <div class="dropdown">
-            <label tabindex="0" class="btn lg:hidden">
+            <!-- Nav Hamburger -->
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5 text-neutral-950"
@@ -85,6 +95,7 @@
                 />
               </svg>
             </label>
+            <!-- MObile Nav -->
             <ul
               tabindex="0"
               class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
@@ -95,15 +106,9 @@
               <li><a>Home</a></li>
             </ul>
           </div>
-
-          <!-- Desktop Logo Container -->
-          <div class="hidden md:block">
-            <img src="images/logo.png" alt="" />
-            <p class="normal-case text-4xl font-bold px-4 py-8">Fruit Burst</p>
-          </div>
         </div>
 
-        <div class="navbar-end hidden">
+        <div class="navbar-end hidden md:flex">
           <!-- Input -->
           <div
             class="join bg-white rounded-3xl flex justify-center items-center pr-4"
