@@ -63,14 +63,15 @@
   <body>
     <!-- Header Start Here -->
     <!-- Nav from daisy -->
-
     <header>
       <div
-        class="container mx-auto navbar md:bg-heroPrimary md:my-12 md:px-12 text-neutral-950 md:text-white rounded-full"
+        class="container mx-auto navbar lg:bg-heroPrimary lg:my-12 md:pr-8 xl:px-12 text-neutral-950 lg:text-white rounded-full"
       >
         <!-- Only for Desktop Nac -->
         <div class="navbar-start hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 text-lg font-medium">
+          <ul
+            class="menu menu-horizontal xl:px-1 xl:text-lg text-base font-medium"
+          >
             <li><a>All Fruits</a></li>
             <li><a>Shop</a></li>
             <li><a>About Us</a></li>
@@ -82,11 +83,11 @@
           <div class="flex gap-3 items-center">
             <img
               src="images/logo.png"
-              class="w-10 h-10 md:w-12 md:h-14"
+              class="w-10 h-10 lg:w-12 lg:h-14"
               alt=""
             />
-            <!-- <img src="svgs/phone-logo.svg" class="md:hidden" alt="" /> -->
-            <p class="normal-case text-3xl md:text-4xl font-bold">
+            <!-- <img src="svgs/phone-logo.svg" class="lg:hidden" alt="" /> -->
+            <p class="normal-case text-3xl lg:text-4xl font-bold">
               Fruit Burst
             </p>
           </div>
@@ -94,7 +95,7 @@
             <!-- Nav Hamburger -->
             <label tabindex="0" class="btn btn-ghost lg:hidden items-center">
               <i
-                class="fa-solid fa-bars text-2xl md:text-white text-neutral-950"
+                class="fa-solid fa-bars text-2xl lg:text-white text-neutral-950"
               ></i>
             </label>
             <!-- MObile Nav -->
@@ -138,14 +139,15 @@
       </div>
     </header>
     <!-- Main  Start Here -->
-    <main class="container sm:w-full w-[92%] mx-auto text-neutral-950">
+    <main class="container lg:w-full w-[92%] mx-auto text-neutral-950">
       <!-- Hero section start here -->
 
       <section class="relative">
+        <!-- carousel -->
         <div class="carousel w-full rounded-2xl">
           <div
             id="slide1"
-            class="carousel-item relative w-full min-h-[250px] md:min-h-[600px]"
+            class="carousel-item relative w-full min-h-[250px] sm:min-h-[375px] md:min-h-[500px] xl:min-h-[600px]"
           >
             <div class="hero bg-[url('images/banner1.png')] bg-cover">
               <div class="hero-overlay bg-opacity-50 bg-black"></div>
@@ -304,11 +306,12 @@
             </div>
           </div>
         </div>
+        <!-- Featured -->
         <div
-          class="hidden md:flex items-center py-8 w-[80%] h-64 rounded-xl lg:px-8 bg-white absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2"
+          class="hidden md:flex items-center md:py-4 lg:py-8 w-[80%] lg:h-64 md:h-auto rounded-xl lg:px-8 bg-white absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2"
         >
           <div class="flex justify-around w-full h-full">
-            <div class="text-center">
+            <div class="text-center hidden lg:block">
               <img src="images/fruit1.png" alt="" />
               <p class="text-heroGray font-medium leading-relaxed">Grapes</p>
             </div>
@@ -320,7 +323,7 @@
               <img src="images/fruit3.png" alt="" />
               <p class="text-heroGray font-medium leading-relaxed">Mango</p>
             </div>
-            <div class="text-center">
+            <div class="text-center hidden lg:block">
               <img src="images/fruit4.png" alt="" />
               <p class="text-heroGray font-medium leading-relaxed">
                 Strawberry
@@ -336,9 +339,9 @@
         </div>
       </section>
       <!-- Deal of the day start here -->
-      <section class="mt-6 md:mt-48">
-        <div class="flex flex-col md:flex-row justify-center items-center">
-          <div class="flex-1 max-w-lg text-center md:text-left">
+      <section class="mt-6 lg:mt-48 md:mt-32">
+        <div class="flex flex-col lg:flex-row justify-center items-center">
+          <div class="flex-1 max-w-lg text-center lg:text-left">
             <h3
               class="text-neutral-900 md:text-5xl text-3xl font-extrabold mb-6"
             >
@@ -346,20 +349,21 @@
             </h3>
 
             <p
-              class="md:w-[600px] w-[80%] mx-auto text-heroGray font-medium leading-relaxed"
+              class="lg:w-[600px] md:w-[500px] w-[80%] mx-auto text-heroGray font-medium leading-relaxed"
             >
               Contrary to popular belief, is not simply random text. It has
               roots in a piece of classical Latin literature from 45 BC, making
               it over 2000 years old.
             </p>
           </div>
-          <div class="flex-1 mt-6 md:mt-0 md:flex justify-end">
+          <!-- Countdown -->
+          <div class="flex-1 mt-6 lg:mt-0 lg:flex justify-end">
             <div
               class="grid grid-flow-col gap-5 text-center auto-cols-max text-heroGray"
             >
               <div class="flex flex-col">
                 <span
-                  class="countdown font-mono font-extrabold text-4xl md:text-5xl text-neutral-950"
+                  class="countdown font-mono font-extrabold text-4xl md:text-5xl sm:text-4xl text-neutral-950"
                 >
                   <span style="--value: 15"></span>
                 </span>
@@ -367,7 +371,7 @@
               </div>
               <div class="flex flex-col">
                 <span
-                  class="countdown font-mono text-4xl md:text-5xl text-neutral-950 font-extrabold"
+                  class="countdown font-mono text-4xl md:text-5xl sm:text-4xl text-neutral-950 font-extrabold"
                 >
                   <span style="--value: 10"></span>
                 </span>
@@ -375,7 +379,7 @@
               </div>
               <div class="flex flex-col">
                 <span
-                  class="countdown font-mono text-4xl md:text-5xl text-neutral-950 font-extrabold"
+                  class="countdown font-mono text-4xl md:text-5xl sm:text-4xl text-neutral-950 font-extrabold"
                 >
                   <span style="--value: 24"></span>
                 </span>
@@ -384,7 +388,7 @@
 
               <div class="flex flex-col">
                 <span
-                  class="countdown font-mono text-neutral-950 text-4xl md:text-5xl font-extrabold"
+                  class="countdown font-mono text-neutral-950 text-4xl md:text-5xl sm:text-4xl font-extrabold"
                 >
                   <span style="--value: 38"></span>
                 </span>
@@ -393,27 +397,29 @@
             </div>
           </div>
         </div>
-
-        <div class="grid md:grid-cols-4 grid-cols-1 gap-5 mt-12 px-5 md:px-0">
+        <!-- Fruits -->
+        <div
+          class="grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-5 mt-12 px-5 lg:px-0"
+        >
           <div
-            class="flex flex-col gap-3 rounded-lg border border-neutral-900 border-opacity-10 justify-center items-center text-center md:px-12 px-2 py-8"
+            class="flex flex-col gap-3 rounded-lg border border-neutral-900 border-opacity-10 justify-center items-center text-center lg:px-12 px-2 py-8"
           >
             <figure>
               <img
                 src="images/fruit6.png"
-                class="w-[131px] h-auto"
+                class="w-[106px] h-[130px]"
                 alt="Shoes"
               />
             </figure>
 
-            <h2 class="text-xl md:text-2xl font-bold mt-4 mb-2">
+            <h2 class="text-xl lg:text-2xl font-bold mt-4 mb-2">
               12.90$ - 18.85$
             </h2>
-            <div class="divider md:w-full m-0 p-0 w-[70%] mx-auto"></div>
+            <div class="divider lg:w-full m-0 p-0 w-[70%] mx-auto"></div>
 
             <p class="text-heroGray font-medium">Apples</p>
             <div
-              class="flex justify-center gap-2 md:justify-between w-full px-12 text-xl text-heroPrimary"
+              class="flex justify-center gap-2 lg:justify-between w-full px-12 text-xl text-heroPrimary"
             >
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
@@ -429,23 +435,23 @@
             </button>
           </div>
           <div
-            class="flex flex-col gap-3 rounded-lg border border-neutral-900 border-opacity-10 justify-center items-center text-center md:px-12 px-2 py-8"
+            class="flex flex-col gap-3 rounded-lg border border-neutral-900 border-opacity-10 justify-center items-center text-center lg:px-12 px-2 py-8"
           >
             <figure>
               <img
                 src="images/fruit7.png"
-                class="w-[131px] h-auto"
+                class="w-[131px] h-[130px]"
                 alt="Shoes"
               />
             </figure>
 
-            <h2 class="text-xl md:text-2xl font-bold mt-4 mb-2">
+            <h2 class="text-xl lg:text-2xl font-bold mt-4 mb-2">
               12.90$ - 18.85$
             </h2>
-            <div class="divider md:w-full m-0 p-0 w-[70%] mx-auto"></div>
+            <div class="divider lg:w-full m-0 p-0 w-[70%] mx-auto"></div>
             <p class="text-heroGray font-medium">Orange</p>
             <div
-              class="flex justify-center gap-2 md:justify-between w-full px-12 text-xl text-heroPrimary"
+              class="flex justify-center gap-2 lg:justify-between w-full px-12 text-xl text-heroPrimary"
             >
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -461,23 +467,23 @@
             </button>
           </div>
           <div
-            class="flex flex-col gap-3 rounded-lg border border-neutral-900 border-opacity-10 justify-center items-center text-center md:px-12 px-2 py-8"
+            class="flex flex-col gap-3 rounded-lg border border-neutral-900 border-opacity-10 justify-center items-center text-center lg:px-12 px-2 py-8"
           >
             <figure>
               <img
                 src="images/fruit8.png"
-                class="w-[131px] h-auto"
+                class="w-[131px] h-[130px]"
                 alt="Shoes"
               />
             </figure>
 
-            <h2 class="text-xl md:text-2xl font-bold mt-4 mb-2">
+            <h2 class="text-xl lg:text-2xl font-bold mt-4 mb-2">
               12.90$ - 18.85$
             </h2>
-            <div class="divider md:w-full m-0 p-0 w-[70%] mx-auto"></div>
+            <div class="divider lg:w-full m-0 p-0 w-[70%] mx-auto"></div>
             <p class="text-heroGray font-medium">Red Dragon</p>
             <div
-              class="flex justify-center gap-2 md:justify-between w-full px-12 text-xl text-heroPrimary"
+              class="flex justify-center gap-2 lg:justify-between w-full px-12 text-xl text-heroPrimary"
             >
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -494,23 +500,23 @@
             </button>
           </div>
           <div
-            class="flex flex-col gap-3 rounded-lg border border-neutral-900 border-opacity-10 justify-center items-center text-center md:px-12 px-2 py-8"
+            class="flex flex-col gap-3 md:hidden lg:flex rounded-lg border border-neutral-900 border-opacity-10 justify-center items-center text-center lg:px-12 px-2 py-8"
           >
             <figure>
               <img
                 src="images/fruit9.png"
-                class="w-[131px] h-auto"
+                class="w-[131px] h-[130px]"
                 alt="Shoes"
               />
             </figure>
 
-            <h2 class="text-xl md:text-2xl font-bold mt-4 mb-2">
+            <h2 class="text-xl lg:text-2xl font-bold mt-4 mb-2">
               12.90$ - 18.85$
             </h2>
-            <div class="divider md:w-full m-0 p-0 w-[70%] mx-auto"></div>
+            <div class="divider lg:w-full m-0 p-0 w-[70%] mx-auto"></div>
             <p class="text-heroGray font-medium">Banana</p>
             <div
-              class="flex justify-center gap-2 md:justify-between w-full px-12 text-xl text-heroPrimary"
+              class="flex justify-center gap-2 lg:justify-between w-full px-12 text-xl text-heroPrimary"
             >
               <i class="fa-solid fa-star"></i>
 
@@ -536,7 +542,6 @@
           </button>
         </div>
       </section>
-
       <!-- MOdal -->
       <!-- Modal for Apple   -->
       <dialog id="apple" class="modal modal-bottom sm:modal-middle">
@@ -701,15 +706,17 @@
 
       <!-- Team Section Starts here -->
       <div
-        class="hero md:h-[600px] mt-8 md:mt-24 rounded-xl bg-[url('images/team.png')]"
+        class="hero xl:h-[600px] mt-8 md:mt-16 xl:mt-24 rounded-xl bg-[url('images/team.png')]"
       >
         <div class="hero-overlay bg-opacity-60 bg-black rounded-xl"></div>
 
         <div
-          class="hero-content my-5 md:my-0 flex-col text-center text-neutral-content"
+          class="hero-content my-5 sm:my-8 xl:my-0 flex-col text-center text-neutral-content"
         >
           <div class="max-w-lg">
-            <h1 class="md:text-4xl text-2xl font-extrabold text-white">
+            <h1
+              class="md:text-4xl xl:text-5xl text-2xl font-extrabold text-white"
+            >
               Meet the team
             </h1>
             <p
@@ -720,7 +727,9 @@
               it over 2000 years old.
             </p>
           </div>
-          <div class="grid md:grid-cols-4 grid-cols-1 gap-8 md:gap-24">
+          <div
+            class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-8 md:gap-24"
+          >
             <div class="flex flex-col justify-center items-center flex-1">
               <figure>
                 <img src="images/member1.png" alt="Shoes" />
@@ -786,7 +795,7 @@
       </div>
       <!-- Why choose us -->
       <section class="my-6 md:my-24">
-        <h1 class="md:text-4xl text-2xl font-extrabold text-center">
+        <h1 class="md:text-4xl xl:text-5xl text-2xl font-extrabold text-center">
           Why Choose Us
         </h1>
         <p
